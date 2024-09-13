@@ -1,0 +1,238 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: 'pre_ex';
+    src: url('font/pretendard/Pretendard-ExtraBold.eot');
+    src: url('font/pretendard/Pretendard-ExtraBold.eot?#iefix') format('embedded-opentype'),
+        url('font/pretendard/Pretendard-ExtraBold.woff2') format('woff2'),
+        url('font/pretendard/Pretendard-ExtraBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'pre_bold';
+    src: url('font/pretendard/Pretendard-Bold.eot');
+    src: url('font/pretendard/Pretendard-Bold.eot?#iefix') format('embedded-opentype'),
+        url('font/pretendard/Pretendard-Bold.woff2') format('woff2'),
+        url('font/pretendard/Pretendard-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'pre_Black';
+    src: url('font/pretendard/Pretendard-Black.eot');
+    src: url('font/pretendard/Pretendard-Black.eot?#iefix') format('embedded-opentype'),
+        url('font/pretendard/Pretendard-Black.woff2') format('woff2'),
+        url('font/pretendard/Pretendard-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'pre';
+    src: url('font/pretendard/Pretendard-ExtraLight.eot');
+    src: url('font/pretendard/Pretendard-ExtraLight.eot?#iefix') format('embedded-opentype'),
+        url('font/pretendard/Pretendard-ExtraLight.woff2') format('woff2'),
+        url('font/pretendard/Pretendard-ExtraLight.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'pre';
+    src: url('font/pretendard/Pretendard-Light.eot');
+    src: url('font/pretendard/Pretendard-Light.eot?#iefix') format('embedded-opentype'),
+        url('font/pretendard/Pretendard-Light.woff2') format('woff2'),
+        url('font/pretendard/Pretendard-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'pre';
+    src: url('font/pretendard/Pretendard-Medium.eot');
+    src: url('font/pretendard/Pretendard-Medium.eot?#iefix') format('embedded-opentype'),
+        url('font/pretendard/Pretendard-Medium.woff2') format('woff2'),
+        url('font/pretendard/Pretendard-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'pre_re';
+    src: url('font/pretendard/Pretendard-Regular.eot');
+    src: url('font/pretendard/Pretendard-Regular.eot?#iefix') format('embedded-opentype'),
+        url('font/pretendard/Pretendard-Regular.woff2') format('woff2'),
+        url('font/pretendard/Pretendard-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'pre';
+    src: url('font/pretendard/Pretendard-Thin.eot');
+    src: url('font/pretendard/Pretendard-Thin.eot?#iefix') format('embedded-opentype'),
+        url('font/pretendard/Pretendard-Thin.woff2') format('woff2'),
+        url('font/pretendard/Pretendard-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'pre';
+    src: url('font/pretendard/Pretendard-SemiBold.eot');
+    src: url('font/pretendard/Pretendard-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('font/pretendard/Pretendard-SemiBold.woff2') format('woff2'),
+        url('font/pretendard/Pretendard-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+/* 초기화 값 */
+* {
+    margin: 0;
+    padding: 0;
+}
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+/* 최상단 스타일*/
+.big_title{
+    height: 1108px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.big_title img{
+    width: 100%;
+    object-fit: cover;
+    align-items: center;
+}
+.big_title .big_text{
+    width: 1280px;
+    top: 35%;
+    display: block;
+    position: absolute;
+    text-align: center;
+    color: #ffffff;
+    padding: 0 610px;
+
+} .big_title .big_text h1{
+    font-size: 65px;
+    font-family: 'pre_bold';
+    padding: 0 300px;
+    margin-bottom: 30px;
+
+} .big_title .big_text p{
+    font-size: 20px;
+    font-family: 'pre_re';
+    padding: 0 390px;
+}
+
+
+/* 중간 스타일 */ .center{
+    width: 1280px;
+    margin: 145px auto ;
+}
+.center h2{
+    font-family: 'pre_bold';
+    font-size: 48px;
+    line-height: 1.2;
+    margin-bottom: 40px;
+}
+
+.center .center_wrap{
+    display: flex;
+    justify-content: center;
+}
+.center .center_wrap .center_item{
+    width: 412px;
+    margin: 0 15px;
+}
+.center .center_wrap .center_item img{
+    height: 460px;
+    object-fit: cover;
+}
+
+.center .center_wrap .center_item .center_text{
+    width: 100%;
+    text-align: center;
+}
+.center .center_wrap .center_item .center_text h3{
+    font-family: 'pre_bold';
+    font-size: 28px;
+}
+.center .center_wrap .center_item .center_text p{
+    font-family: 'pre_re';
+    padding: 0 2px;
+}
+
+
+/* 하단 스타일 */
+.bottom{
+    background-color: #eeeeee;
+}
+.bottom_wrap{
+    width: 1280px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto ;
+}
+
+.bottom .bottom_wrap img{
+    height: 712px;
+    object-fit: cover;
+    margin: 160px 0;
+}
+
+.bottom .bottom_wrap .bottom_text{
+    margin: 0 110px 0 0;
+}
+.bottom .bottom_wrap .bottom_text span{
+    color: #9d1e34;
+    font-family: 'pre';
+    font-weight: 600;
+}
+.bottom .bottom_wrap .bottom_text h1{
+    font-family: 'pre_bold';
+    font-size: 48px;
+    line-height: 1.2;
+}
+.bottom .bottom_wrap .bottom_text p{
+    margin: 20px 0;
+    font-family: 'pre';
+    color: #555555;
+    font-size: 19px;
+}
+.bottom .bottom_wrap .bottom_text a{
+    display: block;
+    font-family: 'pre';
+    width: 220px;
+    height: 50px;
+    line-height: 50px;
+    background-color: #ffffff;
+    color: #555555;
+    border: 1px solid #555555;
+    border-radius: 30px;
+    text-align: center;
+    margin: 70px 0;
+}
